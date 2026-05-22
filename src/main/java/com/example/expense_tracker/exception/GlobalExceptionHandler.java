@@ -11,7 +11,7 @@ import org.springframework.web.context.request.WebRequest;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-  @ExceptionHandler(CategoryNotFoundException.class)
+  @ExceptionHandler(ResourseNotFoundException.class)
   public ResponseEntity<ExceptionDetails> handleCategoryNotFound(Exception exception, WebRequest request) {
     ExceptionDetails exceptionDetails = new ExceptionDetails(
         LocalDateTime.now(),

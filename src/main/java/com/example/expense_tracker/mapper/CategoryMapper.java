@@ -7,7 +7,7 @@ import com.example.expense_tracker.entity.Category;
 
 @Component
 public class CategoryMapper {
-  public Category toEntity(CategoryDto categoryDto) {
+  public static Category toEntity(CategoryDto categoryDto) {
     if (categoryDto == null)
       return null;
     Category category = new Category();
@@ -16,7 +16,7 @@ public class CategoryMapper {
     return category;
   }
 
-  public CategoryDto toDto(Category category) {
+  public static CategoryDto toDto(Category category) {
     if (category == null)
       return null;
     return new CategoryDto(category.getId(), category.getName());

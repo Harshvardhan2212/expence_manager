@@ -7,5 +7,5 @@ public record ExpenseDto(
     Long id,
     BigDecimal amount,
     LocalDateTime expenseDate,
-    CategoryDto category) {
+    CategoryDto categoryDto) {
 }
